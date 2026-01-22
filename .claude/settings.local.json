@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls public/*.jpg)",
+      "Bash(npm run dev)",
+      "Bash(npm install)",
+      "Bash(npx next dev)",
+      "Bash(npx next build)",
+      "Bash(taskkill /pid 5056 /f)",
+      "Bash(netstat -ano)",
+      "Bash(findstr :3000)",
+      "Bash(taskkill /PID 5056 /F)",
+      "Bash(powershell Stop-Process -Id 5056 -Force)",
+      "Bash(git add .)"
+    ]
+  }
+}
