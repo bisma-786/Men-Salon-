@@ -19,11 +19,12 @@ export default function Services({ content }: { content: { services?: Service[] 
       <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-accent/5 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2" />
 
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16 text-center md:text-left">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            className="w-full md:w-auto"
           >
             <h2 className="text-sm font-bold tracking-[0.2em] uppercase text-accent mb-4">The Menu</h2>
             <h3 className="text-4xl md:text-5xl font-bold font-heading text-white">
@@ -34,7 +35,7 @@ export default function Services({ content }: { content: { services?: Service[] 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="max-w-md text-stone-400 text-lg leading-relaxed"
+            className="max-w-md text-stone-400 text-lg leading-relaxed text-center md:text-left"
           >
             We don&apos;t just cut hair. We refine your image with a clinical attention to detail and a commitment to consistency.
           </motion.p>
@@ -53,15 +54,15 @@ export default function Services({ content }: { content: { services?: Service[] 
                 transition={{ delay: i * 0.1 }}
                 className="group relative bg-stone-900/50 p-10 hover:bg-stone-800/80 transition-all duration-500"
               >
-                <div className="relative z-10">
+                <div className="relative z-10 flex flex-col items-center text-center">
                   <div className="w-12 h-12 bg-accent/10 border border-accent/20 rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-accent group-hover:text-stone-900 transition-all duration-500 text-accent icon-non-social">
                     <Icon className="w-6 h-6" />
                   </div>
-                  <h4 className="text-2xl font-bold text-white mb-4">{s.title}</h4>
-                  <p className="text-stone-400 leading-relaxed mb-8 min-h-[4.5rem]">
+                  <h4 className="text-2xl font-bold text-white mb-4 text-center">{s.title}</h4>
+                  <p className="text-stone-400 leading-relaxed mb-8 min-h-[4.5rem] text-center">
                     {s.description}
                   </p>
-                  <div className="flex items-center justify-between mt-auto">
+                  <div className="flex flex-col sm:flex-row items-center justify-between w-full gap-4 mt-auto">
                     <span className="text-xs font-bold tracking-widest uppercase text-stone-500">Investment</span>
                     <span className="text-xl font-bold text-white group-hover:text-accent transition-colors">
                       From £{s.price}
