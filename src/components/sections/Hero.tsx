@@ -29,25 +29,25 @@ export default function Hero({ content }: { content: SiteContent }) {
         <div className="absolute inset-0 bg-gradient-to-r from-stone-950 via-transparent to-stone-950/20" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-20 pb-12 text-center grid grid-cols-1 gap-12 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-20 pb-12 text-center lg:text-left grid lg:grid-cols-2 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-accent/10 text-accent rounded-full border border-accent/20 mx-auto">
+          <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-accent/10 text-accent rounded-full border border-accent/20">
             Est. 2018 • London&apos;s Finest
           </span>
-          <h1 className="text-5xl md:text-7xl font-bold font-heading leading-tight text-white text-balance text-center lg:text-left">
+          <h1 className="text-5xl md:text-7xl font-bold font-heading leading-tight text-white text-balance">
             Your Reputation, <br />
             <span className="text-accent underline decoration-accent/30 underline-offset-8">Refined.</span>
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-stone-400 max-w-xl mx-auto text-balance leading-relaxed">
+          <p className="mt-6 text-lg md:text-xl text-stone-400 max-w-xl mx-auto lg:mx-0 text-balance leading-relaxed">
             {hero.subheadline || "Precision grooming for the modern gentleman. Experience the art of the perfect cut in an atmosphere built for focus."}
           </p>
 
-          <div className="mt-10 flex flex-col sm:flex-row items-center gap-4 justify-center">
+          <div className="mt-10 flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
             <a
               href={bookingUrl}
               className="btn-primary w-full sm:w-auto text-lg group"
@@ -67,7 +67,7 @@ export default function Hero({ content }: { content: SiteContent }) {
             )}
           </div>
 
-          <div className="mt-12 flex items-center justify-center gap-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
+          <div className="mt-12 flex items-center justify-center lg:justify-start gap-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
             <div className="flex flex-col">
               <span className="text-2xl font-bold text-white">4.9/5</span>
               <span className="text-xs uppercase tracking-wider">Google Rating</span>
@@ -80,7 +80,7 @@ export default function Hero({ content }: { content: SiteContent }) {
           </div>
         </motion.div>
 
-        {/* 3D Visual Proof Element - Now visible on all screen sizes */}
+        {/* 3D Visual Proof Element - Now visible on all screen sizes but in sidebar layout on desktop */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}

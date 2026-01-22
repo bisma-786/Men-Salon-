@@ -14,7 +14,9 @@
       "Bash(git add .)",
       "Bash(git remote add origin https://github.com/bisma-786/Men-Salon-.git)",
       "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: Complete barber shop template with responsive design\n\n- Implemented dark theme with white testimonials section\n- Added responsive design for mobile devices\n- Fixed 3D model visibility on mobile\n- Enhanced icon hover effects\n- Updated gallery with barber shop images\n- Improved testimonial text visibility\n- Added proper meta tags and SEO optimization\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
-      "Bash(git push -u origin master)"
+      "Bash(git push -u origin master)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nfix: Center titles and content for mobile responsiveness\n\n- Centered Services section titles and content on mobile\n- Centered Team section titles and content on mobile\n- Maintained desktop layout and responsiveness\n- Aligned pricing cards content for better mobile viewing\n- Centered team member bios and specialties on mobile\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push origin master)"
     ]
   }
 }
